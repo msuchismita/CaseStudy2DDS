@@ -1,0 +1,23 @@
+---
+title: "DDS 6306 : Case Study 2"
+author: "Suchismita Moharana"
+date: "11/24/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)  ##message = FALSE, warning = FALSE)
+library(ggplot2)
+library(dplyr)
+library(ggthemes)
+library(plotly)
+library(curl)
+```
+
+
+```{r}
+df_case_study2_whole <- read.csv(curl("https://raw.githubusercontent.com/BivinSadler/MDS-6306-Doing-Data-Science-Fall-2019/Master/Unit%2014%20and%2015%20Case%20Study%202/CaseStudy2-data.csv"))
+df_case_study2_whole
+```
+
+
